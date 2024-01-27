@@ -1,6 +1,6 @@
-# sciwork Conference Repository
+# sciwork 2023 Conference Repository
 
-This repository holds the websites for sciwork's annual conferences. The site is hosted at [https://conf.sciwork.dev](https://conf.sciwork.dev) via Netlify.
+This repository holds the websites for sciwork 2023 annual conferences. The site is hosted at [https://conf2023.sciwork.dev](https://conf2023.sciwork.dev) via Netlify. It is built using [Next.js](https://nextjs.org/) bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Repository Structure
 
@@ -13,6 +13,31 @@ The repository is organized into the following directories:
 - `netlify.toml`: This is the configuration file for Netlify. It instructs Netlify how to build and deploy the sites for the different conferences.
 
 Please refer to the respective README file within each conference's directory for specific details and instructions about that conference's site.
+
+## Getting Started
+
+Before you start, make sure you have the following installed:
+
+- `node` (v18.16.0). We recommend using [nvm](https://github.com/nvm-sh/nvm) to manage your node versions. Once you have `nvm` installed, run `nvm install v18.16.0` to install node. Then use [avn](https://github.com/wbyoung/avn) to automatically switch to the correct node version when you enter the project directory.
+- `yarn`
+
+Install the necessary dependencies via:
+
+```bash
+yarn install
+```
+
+Then run the development server:
+
+```bash
+make devserver
+```
+
+Open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Contribution Guidelines
 
@@ -39,12 +64,12 @@ For specific instructions on how to run and develop the site locally, refer to t
 
 We use Netlify to host our site.
 
-- The `main` branch is deployed to the official website [https://conf.sciwork.dev](https://conf.sciwork.dev) and [https://swconf.netlify.app](https://swconf.netlify.app).
+- The `main` branch is deployed to the official website [https://conf2023.sciwork.dev](https://conf2023.sciwork.dev) and [https://conf2023.netlify.app](https://conf2023.netlify.app).
 
-- The `develop` branch is deployed to the under development [https://develop--swconf.netlify.app](https://develop--swconf.netlify.app).
+- The `develop` branch is deployed to the under development [https://develop--conf2023.netlify.app](https://develop--conf2023.netlify.app).
 
-- Other branches are deployed to `https://{branch}--swconf.netlify.app`. Replace `/` in the branch name with `-`.
+- Other branches are deployed to `https://{branch}--conf2023.netlify.app`. Replace `/` in the branch name with `-`.
 
-- Pull requests are deployed to `https://deploy-preview-{id}--swconf.netlify.app`.  `{id}` is the PR ID.
+- Pull requests are deployed to `https://deploy-preview-{id}--conf2023.netlify.app`. `{id}` is the PR ID.
 
 To deploy your changes to Netlify, you will need to push your changes to GitHub. Netlify will then automatically detect these changes and rebuild the site.

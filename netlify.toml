@@ -1,5 +1,5 @@
 [build]
-  base = "content/2023/"
+  base = "/"
   command = "env SITEURL=$DEPLOY_PRIME_URL make html"
   publish = "output"
 
